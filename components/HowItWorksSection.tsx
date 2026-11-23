@@ -5,7 +5,7 @@ const STEPS = [
     step: '01',
     title: 'Escolha a apostila',
     description:
-      'Selecione no catálogo a apostila em PDF correspondente ao concurso e à banca de Guarda Civil Municipal que você vai prestar.',
+      'Selecione no catálogo a apostila em PDF correspondente ao concurso que você vai prestar.',
     icon: BookOpen,
   },
   {
@@ -28,7 +28,7 @@ export default function HowItWorksSection() {
   return (
     <section
       id="como-funciona"
-      className="border-b border-[#232a35] bg-[#0a0c0f] py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-20 border-b border-[#232a35] bg-[#0a0c0f] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 max-w-2xl">

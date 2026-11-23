@@ -11,28 +11,25 @@ export default function ProductsSection() {
   return (
     <section
       id="apostilas"
-      className="border-b border-[#232a35] bg-[#0a0c0f] py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-20 border-b border-[#232a35] bg-[#0a0c0f] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="mb-10 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="mb-3 flex items-center gap-3">
-              <span
-                aria-hidden="true"
-                className="inline-block h-[2px] w-6 bg-[#b91c1c]"
-              />
-              <span className="font-display text-xs font-bold uppercase tracking-[0.18em] text-[#c9a227]">
-                Catálogo de materiais
-              </span>
-            </div>
-            <h2 className="font-display text-3xl font-extrabold uppercase tracking-tight text-[#f8fafc] sm:text-4xl">
-              Apostilas disponíveis
-            </h2>
+        <div className="mb-12 max-w-2xl">
+          <div className="mb-3 flex items-center gap-3">
+            <span
+              aria-hidden="true"
+              className="inline-block h-[2px] w-6 bg-[#b91c1c]"
+            />
+            <span className="font-display text-xs font-bold uppercase tracking-[0.18em] text-[#c9a227]">
+              Catálogo de materiais
+            </span>
           </div>
-
-          <p className="max-w-md font-serif text-sm leading-relaxed text-[#9ca3af] sm:text-base">
+          <h2 className="text-balance font-display text-3xl font-extrabold uppercase tracking-tight text-[#f8fafc] sm:text-4xl">
+            Apostilas disponíveis
+          </h2>
+          <p className="mt-3 font-serif text-base leading-relaxed text-[#9ca3af]">
             Espaços reservados para os próximos lançamentos em PDF voltados aos
-            concursos de Guarda Civil Municipal.
+            concursos públicos.
           </p>
         </div>
 
@@ -67,8 +64,8 @@ export default function ProductsSection() {
               className="group relative flex flex-col justify-between rounded-sm border border-[#232a35] bg-[#11151b] p-5 transition-transform duration-150 hover:-translate-y-1 hover:border-[#c9a227]/70"
             >
               <div>
-                {/* CSS-only placeholder cover area */}
-                <div className="relative mb-5 flex aspect-[4/3] w-full flex-col items-center justify-center overflow-hidden rounded-sm border border-dashed border-[#2c3442] bg-[#0a0c0f] p-4">
+                {/* CSS-only placeholder cover area (retrato A4; ao inserir capa real, usar object-contain) */}
+                <div className="relative mb-5 flex aspect-[3/4] w-full flex-col items-center justify-center overflow-hidden rounded-sm border border-dashed border-[#2c3442] bg-[#0a0c0f] p-4">
                   <span
                     aria-hidden="true"
                     className="absolute inset-x-0 top-0 h-[2px] bg-[#b91c1c]/80"

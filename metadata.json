@@ -1,6 +1,6 @@
 {
   "name": "Aprovação Total",
-  "description": "Apostilas em PDF completas e de questões para concursos de Guarda Civil Municipal.",
+  "description": "Apostilas em PDF completas e de questões para concursos públicos.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

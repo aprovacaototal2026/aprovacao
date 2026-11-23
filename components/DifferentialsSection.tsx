@@ -35,7 +35,7 @@ export default function DifferentialsSection() {
   return (
     <section
       id="por-que-nos"
-      className="border-b border-[#232a35] bg-[#0d1015] py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-20 border-b border-[#232a35] bg-[#0d1015] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 max-w-2xl">
@@ -53,7 +53,7 @@ export default function DifferentialsSection() {
           </h2>
           <p className="mt-3 font-serif text-base leading-relaxed text-[#9ca3af]">
             Cada apostila é construída para transformar o tempo de leitura em
-            preparo objetivo para a prova da Guarda Civil Municipal.
+            preparo objetivo para a prova do seu concurso.
           </p>
         </div>
 

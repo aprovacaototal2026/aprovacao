@@ -37,7 +37,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="border-b border-[#232a35] bg-[#0d1015] py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-20 border-b border-[#232a35] bg-[#0d1015] py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <div className="mb-10">

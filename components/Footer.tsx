@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer
       id="contato"
-      className="bg-[#0a0c0f] py-12 text-[#b8bec8] sm:py-16"
+      className="scroll-mt-20 bg-[#0a0c0f] py-12 text-[#b8bec8] sm:py-16"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-10 border-b border-[#232a35] pb-10 md:grid-cols-12">
@@ -27,8 +27,7 @@ export default function Footer() {
               <span>Aprovação Total</span>
             </div>
             <p className="mt-3 max-w-sm font-serif text-sm leading-relaxed text-[#9ca3af]">
-              Apostilas digitais em PDF focadas em concursos de Guarda Civil
-              Municipal.
+              Apostilas digitais em PDF focadas em concursos públicos.
             </p>
           </div>
 

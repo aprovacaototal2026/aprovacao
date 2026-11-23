@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, Shield, X } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
   { label: 'Apostilas', href: '#apostilas' },
-  { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Por que nós', href: '#por-que-nos' },
+  { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Perguntas frequentes', href: '#faq' },
   { label: 'Contato', href: '#contato' },
 ];
@@ -17,19 +18,27 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 border-b border-[#232a35] bg-[#0a0c0f]/95 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-8 px-4 sm:px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 xl:gap-8">
         <a
           href="#inicio"
           onClick={() => setMobileOpen(false)}
-          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-xl font-extrabold uppercase tracking-wider text-[#f3f4f6] transition-colors hover:text-[#c9a227] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a227]"
+          className="flex shrink-0 items-center gap-3 whitespace-nowrap font-display text-xl font-extrabold uppercase tracking-wider text-[#f3f4f6] transition-colors hover:text-[#c9a227] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a227]"
         >
-          <Shield className="h-5 w-5 text-[#c9a227]" aria-hidden="true" />
+          <Image
+            src="/assets/aistudio/Aprova__o_TOtal_70aab082.png"
+            alt="Logo Aprovação Total"
+            width={96}
+            height={64}
+            className="h-12 w-auto rounded-sm object-contain sm:h-14"
+            referrerPolicy="no-referrer"
+            priority
+          />
           <span>Aprovação Total</span>
         </a>
 
         <nav
           aria-label="Navegação principal"
-          className="hidden items-center gap-6 lg:flex"
+          className="hidden items-center gap-4 lg:flex xl:gap-6"
         >
           {NAV_LINKS.map((item) => (
             <a

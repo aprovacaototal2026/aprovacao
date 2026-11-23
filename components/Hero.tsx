@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden border-b border-[#232a35] bg-[#0a0c0f] pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-28"
+      className="relative scroll-mt-20 overflow-hidden border-b border-[#232a35] bg-[#0a0c0f] pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-28"
     >
       <div className="tactical-grid pointer-events-none absolute inset-0 opacity-70" />
       <div
@@ -22,7 +22,7 @@ export default function Hero() {
                 className="inline-block h-[2px] w-8 bg-[#b91c1c]"
               />
               <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-[#c9a227]">
-                Concursos de Guarda Civil Municipal
+                Concursos públicos
               </p>
             </div>
 
@@ -33,8 +33,8 @@ export default function Hero() {
 
             <p className="mt-5 max-w-xl font-serif text-base leading-relaxed text-[#b8bec8] sm:text-lg">
               Apostilas completas e cadernos de questões em PDF elaborados para
-              a preparação objetiva em concursos de Guarda Civil Municipal.
-              Estudo direcionado ao conteúdo programático, sem rodeios.
+              a preparação objetiva em concursos públicos. Estudo direcionado ao
+              conteúdo programático, sem rodeios.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-5">
@@ -95,13 +95,14 @@ export default function Hero() {
                 className="absolute -bottom-px -right-px h-3 w-3 border-b-2 border-r-2 border-[#c9a227]"
               />
 
-              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-sm bg-[#0a0c0f]">
+              <div className="relative w-full overflow-hidden rounded-sm bg-[#0a0c0f]">
                 <Image
                   src="/assets/aistudio/Aprova__o_TOtal_70aab082.png"
                   alt="Logotipo oficial Aprovação Total — Apostilas, Simulados e Questões"
-                  fill
+                  width={1536}
+                  height={1024}
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover"
+                  className="h-auto w-full object-contain"
                   priority
                   referrerPolicy="no-referrer"
                 />
@@ -109,7 +110,7 @@ export default function Hero() {
 
               <div className="mt-3 flex items-center justify-between border-t border-[#1e242d] pt-3 px-1">
                 <span className="font-display text-xs font-bold uppercase tracking-[0.16em] text-[#9ca3af]">
-                  Preparação GCM
+                  Preparação para concursos
                 </span>
                 <span
                   aria-hidden="true"
