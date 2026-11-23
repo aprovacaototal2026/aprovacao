@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-barlow-condensed), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+  --color-obsidian: #0a0c0f;
+  --color-obsidian-surface: #11151b;
+  --color-obsidian-elevated: #171c24;
+  --color-obsidian-border: #232a35;
+  --color-gold: #c9a227;
+  --color-gold-bright: #dfb83b;
+  --color-gold-muted: #8f7219;
+  --color-tactical-red: #b91c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0c0f;
+  color: #e6e8ec;
+}
+
+body {
+  background-color: #0a0c0f;
+  color: #e6e8ec;
+  font-family: var(--font-source-serif), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle tactical grid pattern using pure CSS */
+.tactical-grid {
+  background-image:
+    linear-gradient(to right, rgba(201, 162, 39, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(201, 162, 39, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
